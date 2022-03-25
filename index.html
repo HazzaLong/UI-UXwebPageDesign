@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Harry's First Website Design!</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+</head>
+<body>
+    <section class="header">
+            <nav>
+                <a href="index.html"><img src="images/HarryLongLogo.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href=>HOME</a></li>
+                        <li><a href=>ABOUT</a></li>
+                        <li><a href=>WEB/APP DEVELOPMENT</a></li>
+                        <li><a href=>ARTWORK</a></li>
+                        <li><a href=>MUSIC</a></li>
+                        <li><a href=>CONTACT</a></li>
+                    </ul>
+                </div> 
+                <i class="fa fa-bars" onclick="showMenu()"></i>  
+            </nav>
+
+    <div class="text-box">
+        <h1>Harry Long</h1>
+        <p>Harry's excited about code, developing websites and applications and is currently
+        on the search for the right company to grow with.<br> He also loves writing, 
+        recording and producing his own music and art projects.</p>
+        <a href="" class="hero-btn">Experience The Work of Harry Long</a>
+    </div>
+    </section>
+
+    <!------ web-app-development ---------->
+
+    <selection class="web-app-development">
+        <h1>Website and App Development</h1>
+        <p>Problems need solutions. That is where a creative programmer is needed!</p>
+
+        <div class="row">
+            <div class="web-app-col">
+               <h3>Web Design</h3>
+               <p>Getting into Web Design was a no brainer as someone who acheived a GCSE in Art
+                and has dedicated years worth of experience using creative industry standard software
+                such as: 'Logic Pro X', 'Adobe Illustrator', 'Premiere Pro' just to name a few.</p>
+            </div>
+            <div class="web-app-col">
+                <h3>App Design</h3>
+                <p>Apps are a huge part of our culture and they can either solve problems or provide
+                 fun and exciting entertainment for our end-users. Here you will find some app concepts
+                 that really emphesise 'user experience' and serve a valid, relevant purpose.</p>
+             </div>
+             <div class="web-app-col">
+                <h3>Game Design</h3>
+                <p>Video Games and mobile app games are one of the most lucritive industries for creative people.
+                    I grew up with a Nintendo GameBoy Color in the late 90s and have had a wide range of different
+                     console experiences which influenced me growing up. Here you will find game concepts which I 
+                     hope to work on making a reality in the near future.
+                </p>
+             </div>
+        </div>
+    </selection>
+
+    <!--------JavaScript for Toggle Menu------->
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+</body>
+</html>
